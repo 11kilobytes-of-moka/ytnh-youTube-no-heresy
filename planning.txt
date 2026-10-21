@@ -1,3 +1,6 @@
+
+note: please guys forgive my typos... that old keybored built a muscle memeory for me using wrong keystrokes... i cant even press 2 keys at once on it... now i got a new actually. 
+
 Ok ok ok this is a dump for the ideas for this extension, its public so i better write something humans can read actually. thank god that its not my handwriting
 we would be all doomed. 
 
@@ -7,3 +10,6 @@ CPS safley so anyone can mess with youtube (surely google will hate me for this)
 actual YTNH extension. so i can do this, and i believe the other extension that mess with youtube actual do this. 
 
 also YTNH for a name does not sound that sweet. do i need a new name? Let me think.
+
+arlight, know i have discovered that i can actually bypass the CSP without striping it whole, which is a major security risk, we can make MY code trusted by
+the CSP so i think i would not make that extension after all stripping CSP. work on progress. 
