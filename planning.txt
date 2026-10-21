@@ -1,0 +1,9 @@
+Ok ok ok this is a dump for the ideas for this extension, its public so i better write something humans can read actually. thank god that its not my handwriting
+we would be all doomed. 
+
+Ok, progress is going good, but still there something called CSP, or "Content-Security-Policy" which tries to block console scripts from chaning the 
+inner DOM of the website, so i have to strip that, striping is simple, we need an extension. so i want to make a new extension with this that STRIPS the 
+CPS safley so anyone can mess with youtube (surely google will hate me for this) inner DOM without being blocked, then i put this extension BUILT IN my
+actual YTNH extension. so i can do this, and i believe the other extension that mess with youtube actual do this. 
+
+also YTNH for a name does not sound that sweet. do i need a new name? Let me think.
