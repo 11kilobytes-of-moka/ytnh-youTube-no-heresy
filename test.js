@@ -43,20 +43,24 @@
 // })();
 
 // one linear version, wont be used at all (not comment because it may be useful for fture reference):
-let likeButton = Array.from(
-  document.querySelectorAll(
-    ".ytReelPlayerOverlayViewModelActionsContainer button[aria-pressed][aria-label]",
-  ),
-).find(
-  (b) =>
-    /^like\b/i.test(b.getAttribute("aria-label")) ||
-    /^\d[\d,.]*\s+likes?$/i.test(b.getAttribute("aria-label")),
-);
 
-console.log(likeButton);
+// ignored the up comment, after revision. this is code misses some of the security features, it dont have the if condetions for the edge cases and so on. so its not gonna be used and will be commented here. 
+
+// let likeButton = Array.from(
+//   document.querySelectorAll(
+//     ".ytReelPlayerOverlayViewModelActionsContainer button[aria-pressed][aria-label]",
+//   ),
+// ).find(
+//   (b) =>
+//     /^like\b/i.test(b.getAttribute("aria-label")) ||
+//     /^\d[\d,.]*\s+likes?$/i.test(b.getAttribute("aria-label")),
+// );
+
+// console.log(likeButton);
+
 
 // This is to actually make my own code trusted, This code was found on the interned, tweaked by me a little. now we have to actually optimize it later and 
-put it in our code. comments explain how this done so i can actually use it later
+//put it in our code. comments explain how this done so i can actually use it later
 
 // 1. Create a custom trusted types policy named 'mySvgPolicy'
 const myPolicy = trustedTypes.createPolicy('mySvgPolicy', {
