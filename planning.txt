@@ -33,3 +33,16 @@ FINALLY I ACTUALLY GOT TO MAKE IT WORK, I FOUND A SAMPLE. now i have to write th
 and make it an extension :D 
 
 note to self: do NOT try to run a mutantationObserver for the dom on a loop just for "testing"..... its not gonna just lag.. it will MELT youtube's tab... yea we need a full restart to this tab right now. 
+
+just for reference i guess, here are heart svgs if you need them later or whatever:
+
+not liked:
+<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+  <path d="M16.25 2.5A6.56 6.56 0 0012 4.062 6.56 6.56 0 007.75 2.5C3.927 2.5 1 5.732 1 9.5c0 4.436 2.807 7.696 5.225 9.698a23.597 23.597 0 004.837 3.072l.095.044.029.013.01.004.005.003c.269-.61.535-1.222.799-1.834.797 1.834.799 1.834.799 1.834l.001-.001.003-.002.01-.004.03-.013.095-.044c.08-.037.19-.089.33-.157a23.6 23.6 0 004.507-2.915C20.193 17.196 23 13.936 23 9.5c0-3.768-2.927-7-6.75-7Zm0 2c2.623 0 4.75 2.239 4.75 5 0 7.089-9 11-9 11s-9-3.911-9-11c0-2.761 2.127-5 4.75-5a4.58 4.58 0 012.922 1.058A5 5 0 0112 7.265a5 5 0 011.328-1.707A4.58 4.58 0 0116.25 4.5Zm-3.453 17.834L12 20.5l-.797 1.834.797.347.797-.347Z"></path>
+</svg>
+
+liked: 
+<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+  <path d="M16.25 3.5c-1.697 0-3.206.765-4.25 1.96C10.956 4.265 9.447 3.5 7.75 3.5 4.527 3.5 2 6.235 2 9.5c0 3.99 2.53 6.996 4.862 8.929 2.355 1.95 4.703 2.972 4.74 2.988l.398.174.398-.174c.037-.016 2.385-1.038 4.74-2.988C19.471 16.495 22 13.49 22 9.5c0-3.265-2.527-6-5.75-6Z"></path>
+</svg>
+
