@@ -29,3 +29,5 @@ Like Button svg (liked. filled.)
 
 just copy paste that into a svg viwer online or i dunno and it will work, nice :D 
 
+FINALLY I ACTUALLY GOT TO MAKE IT WORK, I FOUND A SAMPLE. now i have to write the code. i just need to understand it..
+and make it an extension :D 
