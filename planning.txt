@@ -31,3 +31,5 @@ just copy paste that into a svg viwer online or i dunno and it will work, nice :
 
 FINALLY I ACTUALLY GOT TO MAKE IT WORK, I FOUND A SAMPLE. now i have to write the code. i just need to understand it..
 and make it an extension :D 
+
+note to self: do NOT try to run a mutantationObserver for the dom on a loop just for "testing"..... its not gonna just lag.. it will MELT youtube's tab... yea we need a full restart to this tab right now. 
