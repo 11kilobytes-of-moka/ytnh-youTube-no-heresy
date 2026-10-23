@@ -91,4 +91,24 @@ removeHeresy();
     updateLikeButton();
   };
   removeHeresy();
+  const observer = new MutationObserver((mutationsList, observer) => {
+    for (const mutation of mutationsList) {
+      if (mutation.type === "childList") {
+        if (
+          window.likeButtonSvg.innerHTML.includes(
+            "m11.31 2 .392.007c1.824.06 3.61.534 5.223 1.388l.343.189.27.154c.264.152",
+          ) ||
+          window.likeButtonSvg.innerHTML.includes(
+            "M11.313 2.002c2.088 0 4.14.546 5.953 1.583l.273.156a2 2 0 00.993.264H21a1",
+          )
+        ) {
+          continue;
+        }
+        else {
+          removeHeresy();
+        }
+      }
+    }
+  });
+  observer.observe(window.likeButton, { childList: true, subtree: true });
 })();
