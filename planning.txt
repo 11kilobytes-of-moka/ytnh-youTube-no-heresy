@@ -46,3 +46,21 @@ liked:
   <path d="M16.25 3.5c-1.697 0-3.206.765-4.25 1.96C10.956 4.265 9.447 3.5 7.75 3.5 4.527 3.5 2 6.235 2 9.5c0 3.99 2.53 6.996 4.862 8.929 2.355 1.95 4.703 2.972 4.74 2.988l.398.174.398-.174c.037-.016 2.385-1.038 4.74-2.988C19.471 16.495 22 13.49 22 9.5c0-3.265-2.527-6-5.75-6Z"></path>
 </svg>
 
+few sceneiros i noticed: 
+
+- actionbar can be a null:
+because simply if the script runs too fast it can be NOTHING because it checked before youtube fully loaded. 
+
+- my label regex my have issues:
+it works, but it may glitch. its "/^\d[\d,.]*\s+likes?$/i". it works, but there are better ways to actually get the button. 
+
+- The observer can get stuck watching an old button: 
+it may get stuck looking on the old button, we want more efficient way of observing.
+
+- my callback reads the svg before checking whether it exists: 
+kinda like the same issue as the actionbar.
+
+- aria-pressed might change without a childList mutation
+it can happen. so. how we are gonna track this? 
+
+WAIT I JUST FOUND 5 BUGS.
