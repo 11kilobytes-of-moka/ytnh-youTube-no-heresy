@@ -51,8 +51,10 @@ few sceneiros i noticed:
 - actionbar can be a null:
 because simply if the script runs too fast it can be NOTHING because it checked before youtube fully loaded. 
 
-- my label regex my have issues:
-it works, but it may glitch. its "/^\d[\d,.]*\s+likes?$/i". it works, but there are better ways to actually get the button. 
+|- my label regex my have issues:
+|it works, but it may glitch. its "/^\d[\d,.]*\s+likes?$/i". it works, but there are better ways to actually get the button.
+|
+|-> FIX: it was not even a full bug, it was just a potional issue, bceause what if the label actually turns into another langauge? what if become in Jajscripton langauge? WHAT IF IT WAS SOMETHING ELSE. it would break the whole system, potionally. 
 
 - The observer can get stuck watching an old button: 
 it may get stuck looking on the old button, we want more efficient way of observing.
@@ -60,7 +62,12 @@ it may get stuck looking on the old button, we want more efficient way of observ
 - my callback reads the svg before checking whether it exists: 
 kinda like the same issue as the actionbar.
 
-- aria-pressed might change without a childList mutation
-it can happen. so. how we are gonna track this? 
+|- aria-pressed might change without a childList mutation
+|it can happen. so. how we are gonna track this? 
+|
+|-> FIX: the button aria-pressed might not change.... BUT THE LABEL INSIDE DOES, IT DOES EVERY SINGLE TIME, we use that instand because youtube changes the label if you clicked or not, so this is will be how we actually check if its liked or not. this is not even a full bug, it was just a potional issue, bceause what if the label actually turns into another langauge? what if become in Jajscripton langauge? WHAT IF IT WAS SOMETHING ELSE. it would break the whole system, potionally.  
 
 WAIT I JUST FOUND 5 BUGS.
+
+new plan: yep.. i got to rewrite the whole system back again, to be better. to be more efficient.
+
