@@ -71,3 +71,4 @@ WAIT I JUST FOUND 5 BUGS.
 
 new plan: yep.. i got to rewrite the whole system back again, to be better. to be more efficient.
 
+so, i wrote the first part of the new rewriting of the system and fixed 2 bugs. 
