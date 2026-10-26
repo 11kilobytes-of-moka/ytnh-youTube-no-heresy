@@ -43,7 +43,7 @@ const removeHeresy = () => {
 };
 removeHeresy();
 
-// For quick injection in the console, use this:
+// For quick injection in the console, use this (outdated): 
 (() => {
   const actionbar = document.querySelector(
     ".ytReelPlayerOverlayViewModelActionsContainer",
@@ -113,6 +113,8 @@ removeHeresy();
   observer.observe(window.likeButton, { childList: true, subtree: true });
 })();
 
+
+// for quick injection in the console, use this (updated):
 (() => {
   const likeButtonParent = document.querySelector(".ytSpecButtonShapeWithLabelHost");
   const likeButton = likeButtonParent.querySelector("button");
@@ -129,7 +131,9 @@ removeHeresy();
   const safeSvgNotFilled = ytPolicy ? ytPolicy.createHTML(likeSvgNotFilled) : likeSvgNotFilled;
   const safeSvgFilled = ytPolicy ? ytPolicy.createHTML(likeSvgFilled) : likeSvgFilled;
   const updateLikeButton = () => {
-    window.likeSvg.outerHTML = safeSvgNotFilled;
+    window.likeBtn.getAttribute("aria-pressed") === "false"
+      ? (window.likeSvg.outerHTML = safeSvgNotFilled)
+      : (window.likeSvg.outerHTML = safeSvgFilled);
   }
   updateLikeButton();
 })();
