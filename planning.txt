@@ -72,3 +72,5 @@ WAIT I JUST FOUND 5 BUGS.
 new plan: yep.. i got to rewrite the whole system back again, to be better. to be more efficient.
 
 so, i wrote the first part of the new rewriting of the system and fixed 2 bugs. 
+
+Update: i discovered that "aira-pressed" is actually not classic buffer style, its normally true or false, which is liekd or not. but when i messed with it to make it true while its not clicked and clicked, IT STAYED TRUE. meaning "aira-pressed" wont lag or misfire during a click easily bceause even if someone messed in the console it would still be correct, meaning  its not goning to misifre that easily.
