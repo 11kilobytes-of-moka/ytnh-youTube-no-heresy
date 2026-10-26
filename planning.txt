@@ -88,3 +88,5 @@ I added a mutantationObserver but got a bug where:
 | a full restart to youtube right now
 |
 |-> FIX: i dunno yet.
+
+I think im not playing my little brother and he is getting sad.... well. today is commit is playing with him.

@@ -135,15 +135,10 @@ removeHeresy();
     ? ytPolicy.createHTML(likeSvgFilled)
     : likeSvgFilled;
   const editHeresy = () => {
-
-    // Bug here Down at the commented code
-
-    // const likeButtonSvg = likeButton.querySelector("svg");
-    // window.likeSvg = likeButtonSvg;
     const isPressed = window.likeBtn.getAttribute("aria-pressed") === "true";
     const targetSvg = isPressed ? safeSvgFilled : safeSvgNotFilled;
-    if (!window.likeSvg.outerHTML.includes("m11.31 2")) {
-      window.likeSvg.outerHTML = targetSvg;
+    if (!likeButtonParent.querySelector("button").querySelector("svg").outerHTML.includes("m11.31 2")) {
+      likeButtonParent.querySelector("button").querySelector("svg").outerHTML = targetSvg;
     }
   };
   editHeresy();
@@ -152,7 +147,7 @@ removeHeresy();
       editHeresy();
     }
   });
-  observer.observe(window.likeBtn, {
+  observer.observe(likeButtonParent.querySelector("button"), {
     childList: true,
     subtree: true,
     attributes: true,
