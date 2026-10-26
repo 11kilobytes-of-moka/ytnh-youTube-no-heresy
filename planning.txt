@@ -65,7 +65,10 @@ kinda like the same issue as the actionbar.
 |- aria-pressed might change without a childList mutation
 |it can happen. so. how we are gonna track this? 
 |
-|-> FIX: the button aria-pressed might not change.... BUT THE LABEL INSIDE DOES, IT DOES EVERY SINGLE TIME, we use that instand because youtube changes the label if you clicked or not, so this is will be how we actually check if its liked or not. this is not even a full bug, it was just a potional issue, bceause what if the label actually turns into another langauge? what if become in Jajscripton langauge? WHAT IF IT WAS SOMETHING ELSE. it would break the whole system, potionally.  
+|-> FIX:the button aria-pressed might not change.... BUT THE LABEL INSIDE DOES, IT DOES EVERY SINGLE TIME, we use thatinstand because youtube changes the label if you clicked or not, so this is will be how we actually check if its liked or not. this is not even a full bug, it was just a potional issue, bceause what if the label actually turns into another langauge? what if become in Jajscripton langauge? WHAT IF IT WAS SOMETHING ELSE. it would break the whole system, potionally.   
+|
+|-> FIX FOR THE FIX: although the problem in my regex that it use lables that might change in different langauges, the label itself change no matter the langauge, we can use that to help us, we dont need to know the value of the label.
+
 
 WAIT I JUST FOUND 5 BUGS.
 
@@ -74,3 +77,5 @@ new plan: yep.. i got to rewrite the whole system back again, to be better. to b
 so, i wrote the first part of the new rewriting of the system and fixed 2 bugs. 
 
 Update: i discovered that "aira-pressed" is actually not classic buffer style, its normally true or false, which is liekd or not. but when i messed with it to make it true while its not clicked and clicked, IT STAYED TRUE. meaning "aira-pressed" wont lag or misfire during a click easily bceause even if someone messed in the console it would still be correct, meaning  its not goning to misifre that easily.
+
+Update: while i was in the bathroom i got an idea on how when we add a mutantationObserver, how it does know there is a new short? THE URL, every youtube short have a diffrent URL. when the url Changes it run the code. but it need to check if it was a shorts video in the first place so it dont misfire sometimes. 
