@@ -79,3 +79,12 @@ so, i wrote the first part of the new rewriting of the system and fixed 2 bugs.
 Update: i discovered that "aira-pressed" is actually not classic buffer style, its normally true or false, which is liekd or not. but when i messed with it to make it true while its not clicked and clicked, IT STAYED TRUE. meaning "aira-pressed" wont lag or misfire during a click easily bceause even if someone messed in the console it would still be correct, meaning  its not goning to misifre that easily.
 
 Update: while i was in the bathroom i got an idea on how when we add a mutantationObserver, how it does know there is a new short? THE URL, every youtube short have a diffrent URL. when the url Changes it run the code. but it need to check if it was a shorts video in the first place so it dont misfire sometimes. 
+
+I added a mutantationObserver but got a bug where:
+
+- window.likeSvg is not updating itself, so its looking at the old svg every single time: 
+| This is simple, it dont update itself. so it dont change the heart into like the seocnd time, because its not looking for an 
+| that dont exist. i tried using the mutantationObserver for this but it just looped CRAZY and crashed my youtube.. yea we need
+| a full restart to youtube right now
+|
+|-> FIX: i dunno yet.
