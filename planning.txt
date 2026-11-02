@@ -99,3 +99,5 @@ update: i playted 2hrs and 20m with him, it was fun minecraft playing. nice. he 
 |-> Fix: refdine it everysingle time or just find another thing. 
 
 yea i fixed github issue with my new email and git config
+
+Update: i can just change the "d" attruibte to fix the issue where youtube render the whole thing, maybe its more efficient i dont know. 
