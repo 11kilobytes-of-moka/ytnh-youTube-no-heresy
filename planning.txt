@@ -92,3 +92,8 @@ I added a mutantationObserver but got a bug where:
 I think im not playing my little brother and he is getting sad.... well. today is commit is playing with him.
 
 update: i playted 2hrs and 20m with him, it was fun minecraft playing. nice. he is happy :>
+
+|-BUG i FOUND
+|- is this svg even right? after i debugged a while i noticed that MY SVG VARIABLE WAS WRONG so my code may be right in the first place and its all because i 
+|- need to keep search for the svg or RE dfine it every single time
+|-> Fix: refdine it everysingle time or just find another thing. 
