@@ -288,3 +288,11 @@ document.querySelectorAll("ytd-reel-player-overlay-renderer, .ytReelPlayerOverla
     )
     .forEach(processShortsActionBar);
 })();
+
+
+// this is a sample for IIFE. 
+
+(() => {
+    
+})();
+

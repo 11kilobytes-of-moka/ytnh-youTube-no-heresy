@@ -101,3 +101,8 @@ update: i playted 2hrs and 20m with him, it was fun minecraft playing. nice. he 
 yea i fixed github issue with my new email and git config
 
 Update: i can just change the "d" attruibte to fix the issue where youtube render the whole thing, maybe its more efficient i dont know. 
+-
+-
+-> FIXED. With the new "d"attruibte thingy, we got this to work no issue :3
+
+YEASSSSSSSSSSSSSSSS! IT WORKED, IT WORKED IT WORKED IT WORKED IT WORKED, i have finally, THE VERY FIRST PROTOTYPE EVER! 
