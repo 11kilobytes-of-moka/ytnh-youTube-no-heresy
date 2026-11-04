@@ -113,3 +113,5 @@ THE DAMN URL! the url changes EVERY, SINGLE, TIME. and still, the page itself ch
 
 update: Found a way to know how to find scrolled videos, the issue now is getting my function to work. 
 i can use async functions to detect it, but that would be a little inefficient. 
+
+update: "yt-navigate-start" is when you scroll, but the video is just starting to load but "yt-navigate-finish" is when it finish loading, but that doesnt mean everything will be loaded. 
