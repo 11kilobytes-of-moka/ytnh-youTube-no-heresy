@@ -106,3 +106,10 @@ Update: i can just change the "d" attruibte to fix the issue where youtube rende
 -> FIXED. With the new "d"attruibte thingy, we got this to work no issue :3
 
 YEASSSSSSSSSSSSSSSS! IT WORKED, IT WORKED IT WORKED IT WORKED IT WORKED, i have finally, THE VERY FIRST PROTOTYPE EVER! 
+
+Now, to make the prototype even better, we do it across SHORTS. 
+so, youtube is a SPA, meaning it doesnt not refreshing, but you know what does refresh? 
+THE DAMN URL! the url changes EVERY, SINGLE, TIME. and still, the page itself changes little bit, so can we just put an observer,that read for the url changes nad just ENFORCE THE REMOVAL OF THE HERESY?
+
+update: Found a way to know how to find scrolled videos, the issue now is getting my function to work. 
+i can use async functions to detect it, but that would be a little inefficient. 
