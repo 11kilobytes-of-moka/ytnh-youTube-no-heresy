@@ -171,7 +171,7 @@ removeHeresy();
     : likePathFilled;
   let isPressed;
   const enforceRemovalOfHeresy = () => {
-    if (!likeButtonParent.querySelector("button").querySelector("svg").querySelector("path").getAttribute("d").includes("m11.31 2") || !likeButtonParent.querySelector("button").querySelector("svg").querySelector("path").getAttribute("d").includes("M11.313 2.002")) {
+    if (!likeButtonParent.querySelector("button").querySelector("svg").querySelector("path").getAttribute("d").includes("m11.31 2") && !likeButtonParent.querySelector("button").querySelector("svg").querySelector("path").getAttribute("d").includes("M11.313 2.002")) {
       isPressed = likeButtonParent.querySelector("button").getAttribute("aria-pressed") === "true";
       likeButtonParent.querySelector("button").querySelector("svg").querySelector("path").setAttribute("transform", "translate(24 24) scale(-1 -1)");
       likeButtonParent.querySelector("button").querySelector("svg").querySelector("path").setAttribute("d", isPressed ? safePathFilled : safePathNotFilled);
