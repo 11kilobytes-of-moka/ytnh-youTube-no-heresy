@@ -247,7 +247,7 @@ const safePathFilled = ytPolicy
   ? ytPolicy.createHTML(likePathFilled)
   : likePathFilled;
 let observer;
-  const EmpowerTheRemovalOfHeresy = (killPid) => {
+const EmpowerTheRemovalOfHeresy = (killPid) => {
   likeButtonParent = document.querySelector(".ytSpecButtonShapeWithLabelHost");
   let isPressed;
   const enforceRemovalOfHeresy = () => {
@@ -296,18 +296,32 @@ let observer;
   if (killPid === 1) {
     observer.disconnect();
     observer = null;
+  } else {
+    return null;
   }
 };
 EmpowerTheRemovalOfHeresy();
-
+const ThePurgatorialMurderOfTheHeresy = async () => {
+  do {
+    likeButtonParent = document.querySelector(
+      ".ytSpecButtonShapeWithLabelHost",
+    );
+    EmpowerTheRemovalOfHeresy();
+    await new Promise((resolve) => setTimeout(resolve, 100));
+  } while (
+    !likeButtonParent
+      .querySelector("button svg path")
+      .getAttribute("d")
+      .includes("m11.31 2") &&
+    !likeButtonParent
+      .querySelector("button svg path")
+      .getAttribute("d")
+      .includes("M11.313 2.002")
+  );
+};
 document.addEventListener("yt-navigate-finish", () => {
   console.log(
     "yt-navigate-finish event detected. Re-enforcing removal of heresy.",
   );
-  const int = setInterval(() => {
-    if (document.querySelector(".ytSpecButtonShapeWithLabelHost")) {
-      EmpowerTheRemovalOfHeresy(1);
-      clearInterval(int);
-    }
-  }, 100);
+  ThePurgatorialMurderOfTheHeresy();
 });

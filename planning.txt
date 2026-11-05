@@ -117,3 +117,5 @@ i can use async functions to detect it, but that would be a little inefficient.
 update: "yt-navigate-start" is when you scroll, but the video is just starting to load but "yt-navigate-finish" is when it finish loading, but that doesnt mean everything will be loaded. 
 
 Bug found: with the new prototype working, it induces an issue, every time you scroll, it addes an new mutantationObserver, which stacks overtime, and cause memeory leaks. 
+
+well i fixed the memeory leak, now im greated by the delay between the internet and site, great. 
