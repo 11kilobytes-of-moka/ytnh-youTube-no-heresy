@@ -229,7 +229,7 @@
   });
 })();
 
-// for quick injection in the console, use this (updated):
+// for "quick" (you need to refresh every single time you paste this, source? source: "just trust me bro.") injection in the console, use this (updated):
 let likeButtonParent = document.querySelector(
   ".ytSpecButtonShapeWithLabelHost",
 );
@@ -246,7 +246,8 @@ const safePathNotFilled = ytPolicy
 const safePathFilled = ytPolicy
   ? ytPolicy.createHTML(likePathFilled)
   : likePathFilled;
-const EmpowerTheRemovalOfHeresy = () => {
+let observer;
+  const EmpowerTheRemovalOfHeresy = (killPid) => {
   likeButtonParent = document.querySelector(".ytSpecButtonShapeWithLabelHost");
   let isPressed;
   const enforceRemovalOfHeresy = () => {
@@ -281,7 +282,7 @@ const EmpowerTheRemovalOfHeresy = () => {
     }
   };
   enforceRemovalOfHeresy();
-  const observer = new MutationObserver((mutationsList, observer) => {
+  observer = new MutationObserver((mutationsList, observer) => {
     for (const mutation of mutationsList) {
       if (mutation.type === "childList") {
         enforceRemovalOfHeresy();
@@ -292,7 +293,21 @@ const EmpowerTheRemovalOfHeresy = () => {
     childList: true,
     subtree: true,
   });
+  if (killPid === 1) {
+    observer.disconnect();
+    observer = null;
+  }
 };
+EmpowerTheRemovalOfHeresy();
+
 document.addEventListener("yt-navigate-finish", () => {
-  EmpowerTheRemovalOfHeresy();
+  console.log(
+    "yt-navigate-finish event detected. Re-enforcing removal of heresy.",
+  );
+  const int = setInterval(() => {
+    if (document.querySelector(".ytSpecButtonShapeWithLabelHost")) {
+      EmpowerTheRemovalOfHeresy(1);
+      clearInterval(int);
+    }
+  }, 100);
 });
