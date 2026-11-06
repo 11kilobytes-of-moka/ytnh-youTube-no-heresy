@@ -119,3 +119,8 @@ update: "yt-navigate-start" is when you scroll, but the video is just starting t
 Bug found: with the new prototype working, it induces an issue, every time you scroll, it addes an new mutantationObserver, which stacks overtime, and cause memeory leaks. 
 
 well i fixed the memeory leak, now im greated by the delay between the internet and site, great. 
+
+hmmmmm, i found a bug... my code actually change the d path.. but youtube change it back.. hmmmmmmmmmmmmmmmmmmmmmmm is  that becasue it did not render fully?
+this can, because the svg can exist before rendering so.... youtube may actually change it back to a heart. nice.
+
+hmm i found another bug. it is bceause my observer listen to added or removed elements (basically before the new d path system managemnt.) so it dont DETECT THE CHANGE that happened to the heart when the bug above this one happened.

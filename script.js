@@ -305,7 +305,7 @@ const ThePurgatorialMurderOfTheHeresy = async () => {
   do {
     likeButtonParent = document.querySelector(
       ".ytSpecButtonShapeWithLabelHost",
-    );
+    )
     EmpowerTheRemovalOfHeresy();
     await new Promise((resolve) => setTimeout(resolve, 100));
   } while (
