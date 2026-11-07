@@ -325,3 +325,4 @@ document.addEventListener("yt-navigate-finish", () => {
   );
   ThePurgatorialMurderOfTheHeresy();
 });
+

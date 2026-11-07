@@ -124,3 +124,6 @@ hmmmmm, i found a bug... my code actually change the d path.. but youtube change
 this can, because the svg can exist before rendering so.... youtube may actually change it back to a heart. nice.
 
 hmm i found another bug. it is bceause my observer listen to added or removed elements (basically before the new d path system managemnt.) so it dont DETECT THE CHANGE that happened to the heart when the bug above this one happened.
+
+I isolaated the new unstable code and stable but buggy code. 
+i think i should stop messing and trying to make the perfect console snippet for this and actually work in the extension.
