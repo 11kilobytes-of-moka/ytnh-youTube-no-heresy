@@ -127,3 +127,5 @@ hmm i found another bug. it is bceause my observer listen to added or removed el
 
 I isolaated the new unstable code and stable but buggy code. 
 i think i should stop messing and trying to make the perfect console snippet for this and actually work in the extension.
+
+[UPDATE]-> i made the very first actual extension, now it actually spam the console, so now i get to work i guess

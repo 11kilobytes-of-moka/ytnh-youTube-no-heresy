@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube No Heresy",
+  "version": "0.1.0",
+  "description": "They believed in a mistake that I'm going to fix myself.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "js": [
+        "index.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
