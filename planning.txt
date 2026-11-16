@@ -129,3 +129,5 @@ I isolaated the new unstable code and stable but buggy code.
 i think i should stop messing and trying to make the perfect console snippet for this and actually work in the extension.
 
 [UPDATE]-> i made the very first actual extension, now it actually spam the console, so now i get to work i guess
+
+I realized its only 3 days untile the "we got X before gta 6" meme dies... and i will miss that, so i decided that i must finish my fully working reliable polished version in only 3 days, its time lock in boys and girls. 
