@@ -153,3 +153,5 @@ update: i added a debug boolean, pretty neat, right :3
 YES I GOT EVERYTHING WORK BEFORE NEVOMBER, 1 HOUR LEFT. MAKE THE README.
 
 YES I FINALLY FINISHED NOW LETS GIT PUSH BEFORE 12:00 before neveomber 19!\
+
+Its crazy how i made the version JUST 3MINS before GTA VI day comes. 
