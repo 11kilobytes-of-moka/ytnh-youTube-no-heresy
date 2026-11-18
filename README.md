@@ -1,5 +1,11 @@
 # YouTube No Heresy
 
+i forgot to put the icon lol
+
+<img width="128" height="128" alt="128" src="https://github.com/user-attachments/assets/78a164d2-991c-49e7-ac60-eb5741126272" />
+
+---
+
 YouTube No Heresy is a small project made by @11kilobytes-of-moka to bring back the original like icon instead of YouTube's new heart icon. It works by injecting its file, `index.js`, to make it work. I made it out of despair because I HATED that heart icon, and I saw many people who also don't like it.
 
 So I decided to fix it myself. Because begging Google won't help.
