@@ -37,7 +37,7 @@ Installation is pretty simple, so follow these steps for either Chromium (S) or 
 3. Go to `0.1.0/` (this current version).
 4. Go to `firefox/`.
 5. Inside, you will find a ZIP file containing the extension. Copy it wherever you want or just leave it there.
-6. Open Firefox, paste this into the URL: `about:debugging#/runtime/this-firefox` → Load Temporary Add-on → Select where the ZIP file is located.
+6. Open Firefox, paste this into the URL: `about:debugging#/runtime/this-firefox` → Load Temporary Add-on → Select where the ZIP file is located. (NOTE: If you are in Firefox, you will need to do this every single time the browser reboots.)
 
 And that's it for now!
 
